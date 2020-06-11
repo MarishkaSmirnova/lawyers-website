@@ -1,0 +1,285 @@
+.practice-main {
+    position: relative;
+    text-align:center;
+    top: 100px;
+    margin:0 auto;
+    max-width:1200px;
+    position: relative;
+    top: -57px;
+}
+.field-nav { 
+	margin: 45px 0 25px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; 
+	a {
+		padding: 2px 23px; 
+		margin: 4px;
+		border: 1px solid $coral; 
+		font: 16px/37px "PT Serif", serif;
+		&:hover {
+			background: $coral;
+			color: black;
+		}
+	}
+	.current {
+		background-color: $coral;
+		color: $grey-text;
+	}
+}
+.field { 
+	margin: 0 0 15px 0; 
+	clear: both; 
+	overflow: hidden; 
+		.practice-header-border {
+			width: 50px;
+			border-bottom: 2px solid $coral;
+			position: relative;
+			left: 35%;
+			transform: translate(-20%, -20%);
+		}
+		.practice-header {
+			width: max-content;
+			h3 {
+				margin:9px 0;
+				font: 21px/20px "PT Serif", serif;
+				text-transform: uppercase;
+			}
+		}
+		.container {
+			margin:50px 0;
+		}
+}
+.flip-boxes {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-grow:1;
+	flex-wrap: wrap;
+}
+.flip-box {
+	display: flex;
+	align-content: stretch;
+	min-height: 300px;
+	min-width: 300px;
+	flex-wrap: wrap;
+	position: relative;
+	border: 10px solid transparent;
+	padding:0;
+	border-top: 0;  
+	-webkit-perspective: 1000;
+	perspective: 1000;
+	&:hover {
+		.back {
+			transform: rotateY(0deg);
+			z-index: 10;
+		}
+		.front {
+			transform: rotateY(180deg);
+			z-index: -1;
+		}
+	}
+	.back, .front {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex: 0 0 100%;
+		-webkit-transition: all 1s cubic-bezier(.5,1,.5,1);
+		transition: all 1s cubic-bezier(.5,1.3,.5,1.3);
+		transform-style: preserve-3d;
+		background-size: cover;
+		background-position: center;
+	}
+	.back {
+		background-color: $coral;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: -1;
+		transform: rotateY(-180deg);
+		color: $white;
+		font-family: $ptsans;
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 30px;
+			height: 30px;
+			border: 15px solid transparent;
+			border-bottom-color: white;
+			border-left-color: white;
+		}
+	}
+	.front {
+		z-index: 10;
+		color: $white;
+		background-color: #1b2d61;
+		.content {
+			font-size: 26px;
+			font-family: $ptserif;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 30px;
+			height: 30px;
+			border: 15px solid $coral;
+			border-bottom-color: white;
+			border-right-color: white;
+		}
+	}
+	.content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		-webkit-transform: translateZ(50px);
+		transform: translateZ(50px);
+		padding: 18px;
+		letter-spacing: 0.019em;
+		line-height: 26px;
+		font: 16px "PT Sans", sans-serif;
+		.square {
+			.square {
+				width: 10px;
+				height: 10px;
+				background: $coral;
+			}
+		}
+	}
+}
+//375
+@media screen and (min-width: $iphone6) {
+	.field {
+		.practice-header-border {
+			left: 39%;
+		}
+	}
+}
+//420
+@media screen and (min-width: $phoneIphone) {
+	.field {
+		.practice-header-border {
+			left: 40%;
+			transform: translate(-30%, -30%);
+		}
+	}
+}
+//640
+@media screen and (min-width: $phoneIphone) {
+	.field {
+		.practice-header-border {
+			left: 42%;
+			transform: translate(-30%, -30%);
+		}
+	}
+}
+//690 
+@media screen and (min-width: $phonePixel) {
+	.field {
+		.practice-header-border {
+			left: 44%;
+		}
+	}
+}
+//846
+@media screen and (min-width: $tabletPortrait) {
+	.field {
+		.practice-header-border {
+			left: 45%;
+		}
+	}
+	.flip-box {
+		min-width: 350px;
+  }
+}
+//1024
+@media screen and (min-width: $tabletLandscape) {
+	.field {
+		.practice-header-border {
+			left: 46%;
+		}
+	}
+}
+//1250
+@media screen and (min-width: $desktopMedium){ 
+	.practice-main {
+		top: 100px;
+	}
+	.field-nav { 
+		margin: 45px 0 25px 0; 
+		a {
+			padding: 18px 24px; 
+			border: 1px solid $coral; 
+			&:hover {
+				background: $coral;
+				color: black;
+			}
+			.current{
+				background: #A74C10;
+				color: $grey-text;
+			}
+		}
+	}
+	.field { 
+		margin: 0 0 15px 0; 
+		clear: both; 
+		overflow: hidden; 
+		.practice-header-border {
+			width: 50px;
+			border-bottom: 2px solid $coral;
+			left: 46%;
+		}
+		.practice-header {
+			width: max-content;
+			h3 {
+				margin: 0;
+				font: 24px/46px $ptserif;
+				text-transform: uppercase;
+			}
+		}
+		.container {
+			margin:50px 0;
+		}
+	}
+	.flip-boxes {
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-grow:1;
+		flex-wrap: wrap;
+	}
+	.flip-box {
+		display: flex;
+		align-content: stretch;
+		min-height: 300px;
+		min-width: 500px;
+		flex-wrap: wrap;
+		position: relative;
+		border: 10px solid transparent;
+		padding:0;
+		border-top: 0;  
+		-webkit-perspective: 1000;
+		perspective: 1000;
+		&:hover {
+			.back {
+				transform: rotateY(0deg);
+				z-index: 10;
+			}
+			.front {
+				transform: rotateY(180deg);
+				z-index: -1;
+			}
+		}
+		.content {
+			font-size: 17px;
+			padding: 25px;
+		}
+	}
+}

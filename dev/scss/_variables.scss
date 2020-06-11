@@ -1,0 +1,61 @@
+//colors
+$grecian-blue:#2988BC;
+// $sea: #2F496E;
+$sea:#00376b;
+$plaster:#F4EADE;
+// $coral: #ED8C72;
+$coral:#ff8235;
+$nav-color:#d3d4dd;
+$white-bgc:#fdfdfd;
+$border-color: #35343475;
+$arrow:#d5d7d7;
+
+//text colors
+// $white-text:rgb(231, 230, 230);
+$white-text:#ffffff;
+$grey-text:#353434;
+// $light-grey-text:#d5d7d7;
+// $light-grey-text:#9b9b9b;
+$dark-grey-text:#666666;
+$black: black;
+
+//fonts
+// $main-font: cabin,helveticaneue,helvetica neue,Helvetica,Arial,sans-serif;
+
+//testimonials quote
+$background-color: hsl(50, 5, 97);
+$black: hsl(200, 40, 10);
+$white: $background-color;
+$base-font-size: 1.8em;
+$base-line-height: 1.5em;
+
+//fonts
+$playfair: 'Playfair Display', serif;
+$sanspro: 'Source Sans Pro', sans-serif;
+
+$tenor: 'Tenor Sans', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+
+$ptserif: 'PT Serif', serif;
+// $ptserif: futura-pt;
+$ptsans: 'PT Sans', sans-serif;
+
+
+//media
+
+// Function to
+// Convert Px to Ems
+@function em($px, $bc: 16){
+    @return #{$px/$bc}em; 
+}
+
+// Media Query Breakpoints
+$desktopMedium: em(1250);
+$tabletLandscape: em(1024);
+$tabletPortrait: em(846);
+$phonePixel:em(690);
+$phoneLandscape: em(640);
+$phoneIphone: em(420);
+$iphone8:em(411);
+$iphone6:em(375);
+$phoneMinimal: em(320);

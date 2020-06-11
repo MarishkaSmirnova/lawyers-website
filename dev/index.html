@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Tenor+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles/styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+      <title>Jeff Linn</title>
+  </head>
+  <!-- <?php
+  include('header.php');
+  ?> -->
+  <body>
+    <header>
+		<nav class="active">
+			<div class="logo">
+				<div class="logo-image">
+					<a href="index.html">
+						<img src="image/Logo.png" alt="jeff lin attorney logo">
+					</a>
+				</div>
+				<div class="logo-text">
+					<h1>Jeff Y. Lin</h1>
+					<hr>
+					<h4>attorney at law</h4>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<a class="menu-item" href="index.html">Home</a>
+				</li>
+				<li>
+					<a class="menu-item" href="about.html">About</a>
+				</li>
+				<li>
+					<a class="menu-item" href="practice.html">Practice areas</a>
+				</li>
+				<li>
+					<a class="menu-item" href="contact.html">Contact</a>
+				</li>
+				<li class="call-button">
+					<i class="fas fa-phone"></i>
+					<a href="tel:=9522211097">(952) 221-1097</a>
+				</li>
+			</ul>
+			<i class="fas fa-bars fa-2x"></i>
+		</nav>     
+		<aside class= "hide-aside">
+			<ul>
+				<li><i class="fas fa-times fa-lg"></i></li>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="practice.html">Practice Areas</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</aside>
+		<div class="overlay hide-overlay"></div>
+    </header>
+		<main>
+			<div class="first-page">
+				<div class="main-image">
+					<div class="parallax"></div>
+				</div>
+				<div class="typedtext" id="typedtext">
+					<h3>Skilled representation from</h3>
+					<h3>a dedicated lawyer</h3>
+				</div>
+				<div class="main-image-text consultation-button">
+					<div class="box">
+						<a class="button hvr-sweep-to-left" href="#popup1">
+							<span>click here to request your</span><br>
+							free consultation
+						</a>
+					</div>
+					<div id="popup1" class="overlay">
+						<div class="popup">
+							<a class="close" href="#">&times;</a>
+							<div class="content">
+								<div class="contact-right">
+									<!-- <?php @session_start();
+										if(isset($_SESSION['errormessage'])){
+										echo "<b>" . $_SESSION['errormessage'] . "</b>";
+										unset($_SESSION['errormessage']);
+										}
+										if(isset($_SESSION['success'])){
+											echo "<b>" . $_SESSION['success'] . "</b>";
+											unset($_SESSION['success']);
+											}
+										?> -->
+										<form action="contact-form.php" method="post" name="intro" class="form-intro" id="form-intro">
+											<div class="basic-info">
+												<h2 class="form-title">Contact me:</h2>
+												<h3>Please fill out the form below to receive a free consultation, we will respond to your inquiry within 24-hours guaranteed.</h3>
+												<div class="name">
+													<input placeholder="* Name" type="text" name="name" class="input">
+													<br>
+												</div>
+												<div class="phone">
+													<input placeholder="* Phone" type="phone" name="phone" class="input">
+													<br>
+												</div>
+												<div class="email">
+													<input placeholder="* Email" type="email" name="email" class="input">
+													<br>
+												</div>
+												<div class="message">
+													<textarea placeholder="* Describe your case" name="message" id="message" cols="30" rows="10" class="input2"></textarea>
+													<br>
+												</div>
+												<p>* required field</p>
+												<div class="button-submit ">
+													<input type="submit" name="submit" value="Submit your message" class="sign_up_button  hvr-sweep-to-left">
+												</div>
+											</div>
+										</form>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="facts-and-numbers">
+				<div class="fact">
+					<span class="counter" data-count="150">0</span>
+					<span>+</span>
+					<h3>cases solved</h3>
+				</div>
+				<div class="fact">
+					<span class="counter" data-count="10">0</span>
+					<span>+</span>
+					<h3>years of experience</h3>
+				</div>
+				<div class="fact">
+					<span class="counter" data-count="200">0</span>
+					<span>+</span>
+					<h3>happy clients</h3>
+				</div>
+				</div>
+			</div> 	
+
+			<div class="about-section">
+				<h2>About me</h2> <br>
+				<div class="about-text-image-wrapper">
+					<div class="text-image">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate a, assumenda magnam iste reiciendis molestias quaerat expedita harum accusamus qui repellat sed maxime ad quibusdam ex animi hic. Deleniti obcaecati aspernatur dicta soluta beatae fuga maxime sed eius animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nihil. Dolore odio earum iure, error quis id reprehenderit neque dolorum non alias, velit adipisci? Rerum, consequatur. Deleniti blanditiis ipsum consectetur vero dolore quod sit quasi aliquam. Quasi, quo veniam qui nulla officia quae libero eos rem corrupti, debitis animi expedita. Voluptatibus, consequatur odio deserunt praesentium dicta enim nostrum. Assumenda, eveniet.</p>
+						<div class="checkmarks">
+							<div class="checkmark">
+								<i class="fas fa-check"></i>
+								<span>Trusted and experienced</span>
+							</div>
+							<div class="checkmark">
+								<i class="fas fa-check"></i>
+								<span>High level of privacy</span>
+							</div>
+							<div class="checkmark">
+								<i class="fas fa-check"></i>
+								<span>Available 24/7</span>
+							</div>
+							<div class="checkmark">
+								<i class="fas fa-check"></i>
+								<span>Flexible payments</span>
+							</div>
+							<div class="checkmark">
+								<i class="fas fa-check"></i>
+								<span>Relationships with our local judges.</span>
+							</div>
+						</div>
+						<div class="box">
+							<a class="button hvr-sweep-to-left" href="about.html">
+								<span>learn more</span>
+							</a>
+						</div>
+					</div>
+					<img src="image/withcertificate.jpg" alt="jeff lin attourney">
+				</div>
+			</div>
+			
+			<div class="practice-areas">
+				<div class="content-wrapper">
+					<h2>Practice areas</h2>
+					<div class="container">
+						<a class="card" href="/Users/Marishka/Projects/Jeff/dev/practice.html#business">
+							<i class="fas fa-briefcase"></i>  
+							<h3>Business law</h3>
+							<p class="small"> Outside general counsel services | Startup and formation</p>
+							<div class="go-corner" href="/Users/Marishka/Projects/Jeff/dev/practice.html#business">
+								<div class="go-arrow">→</div>
+							</div>
+						</a>
+						<a class="card" href="/Users/Marishka/Projects/Jeff/dev/practice.html#litigation">
+							<i class="fas fa-gavel"></i>
+							<h3>Litigation</h3>
+							<p class="small">
+								Lawsuits
+								| Dispute resolution
+								| Finance and Accounting
+								| Appeals
+								| Federal 
+							</p>
+							<div class="go-corner" href="/Users/Marishka/Projects/Jeff/dev/practice.html#litigation">
+								<div class="go-arrow">→</div>
+							</div>
+						</a>
+						<a class="card" href="/Users/Marishka/Projects/Jeff/dev/practice.html#family">
+							<i class="fas fa-user-friends"></i>
+							<h3>Family law</h3>
+							<p class="small">
+								Divorce
+								| Custody
+								| Child support
+								| Alimony
+							</p>
+							<div class="go-corner" href="/Users/Marishka/Projects/Jeff/dev/practice.html#family">
+							<div class="go-arrow">→</div>
+							</div>
+						</a>
+						<a class="card" href="/Users/Marishka/Projects/Jeff/dev/practice.html#china">
+							<i class="fas fa-globe-asia"></i>  
+							<h3>China law</h3>
+							<p class="small">Card description with lots of great facts and interesting details.</p>
+							<div class="go-corner" href="/Users/Marishka/Projects/Jeff/dev/practice.html#china">
+								<div class="go-arrow">→</div>
+							</div>
+						</a>
+					</div>
+				</div>  
+			</div>
+
+			<div class="testimonials">
+				<h2>Testimonials</h2>
+				<div class="slider">
+					<div class="slide">
+						<blockquote class="groucho">
+							Jeff Lin has accepted various legal tasks on tight timelines and completed each task masterfully and on time. He and his team proved knowledgeable, responsive, friendly, trustworthy and capable in every respect.
+							<footer>S.W.</footer>
+						</blockquote>
+					</div>
+					<div class="slide">
+						<blockquote class="groucho">
+							Jeff Lin has accepted various legal tasks on tight timelines and completed each task masterfully and on time. He and his team proved knowledgeable, responsive, friendly, trustworthy and capable in every respect.
+							<footer>S.W.</footer>
+						</blockquote>
+					</div>
+					<div class="slide">
+						<blockquote class="groucho">
+							Jeff Lin has accepted various legal tasks on tight timelines and completed each task masterfully and on time. He and his team proved knowledgeable, responsive, friendly, trustworthy and capable in every respect.
+							<footer>S.W.</footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</main>
+      <footer>
+        <div class="footer-wrapper">
+            <div class="footer-navigation">
+                <ul>
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a href="areas.html">Practice Areas</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              <hr>
+              <div class="social">
+                <ul>
+                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-contact">
+              <!-- <img src="image/contact-jeff-lin-attourney.png" alt="attourney minnesota"> -->
+              <div class="footer-contact-info">
+                <h6>Jeff Lin attourney at law</h6>
+                <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                    7809 Southtown Ctr #351<br>
+                    Bloomington, MN 55431<br></span>
+                  <span> <i class="fas fa-phone"></i>
+                    <a href="tel:=9522211097">+1(952)221-1097</a></span> 
+                    <br>
+                    <span> <i class="fas fa-envelope"></i> 
+                      <a href="mailto:jeff@jefflinlaw.com">jeff@jefflinlaw.com</a>
+                    </span>
+                    </p>
+              </div>
+            </div>
+        </div>
+        <div class="copyright">
+          <h4>© 2019 Jeff Lin. </h4>
+          <p>All rights reserved.</p>
+        </div>
+	  </footer>
+	    <!-- <?php
+		include('footer.php');
+		?> -->
+    <!-- </div>    end of wrapper   -->
+  </body>
+  <script src="scripts/navbar.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="scripts/slick-slider.js"></script>
+  <script type="text/javascript" src="scripts/modal-window.js"></script>
+  <script type="text/javascript" src="scripts/counter.js"></script>
+</html>

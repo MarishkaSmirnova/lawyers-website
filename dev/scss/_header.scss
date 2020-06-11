@@ -1,0 +1,632 @@
+
+nav {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  color: $white-text;
+  transform: translatey(-100px);
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  background-color: $sea;
+  height: 110px;
+  .logo {
+    width:250px;
+    padding: 13px 0;
+    display: flex;
+     .logo-image {
+		img {
+			margin: 15px 15px 15px 20px;
+			width: 73px;
+			// margin-top: 10px;
+      }
+    }
+    .logo-text {
+      margin-left: 10px;
+      margin-top: 19px;
+        h1 {
+          font: 27px/33px $ptserif;
+      }
+        hr {
+          padding-bottom: 1px;
+          background-color: $coral;
+          border-bottom:1px solid $coral;
+          padding:0;
+          width: 81px;
+          margin: 5px auto;
+        }
+        h4 {
+          font-size: 14px;
+        }
+      }
+      // .fas {
+      //   margin-right:3px;
+      //   color:$white-text;
+      // } 
+    }
+   
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    // margin-right: 46px;
+    // margin-bottom: 68px;
+    li {
+      display: inline-block;
+      padding: 0 1rem;
+      position: relative;
+      cursor: pointer;
+      font-size: 13px;
+      text-transform: uppercase;
+      .menu-item {
+        text-decoration: none;
+        color: $white-text;
+        .menu-item {
+          border-left-style: solid;
+          border-left-width: 1px;
+          padding-left: 13px;
+          margin-left: -13px;
+          // &:not(:first-child):before {
+          //   content: " | ";
+          // }
+          .fas {
+            color:$coral;
+          }
+        }
+      }
+    }
+  }
+  .call-button {
+          text-align: center;
+          // border: 1px solid $coral;
+          padding:20px;
+          font-size: 18px;
+          color: $coral;
+          margin-left:20px; 
+          a {
+          font-size: 21px;
+          color: $coral;
+          text-decoration: none;
+          }
+        }
+}
+// nav {
+//   #menu-navigation {
+//   li {
+//     .menu-item {
+//       color:$sea;
+//     }
+//     }
+//   }
+// }
+.active { 
+  transform: translatey(0);
+
+}
+
+nav > h1 {
+  margin: 0;
+  // font-size: 3rem;
+  transition: all 0.5s ease;
+}
+
+nav > ul > li:not(.call-button)::before {
+  position: absolute;
+  z-index: 2;
+  left: calc(50% - 8px) ;
+  bottom: 17px;
+  opacity: 0;
+  content: '';
+  background: $coral;
+  height: 16px;
+  width: 0px;
+  clip-path: polygon(0 0, 53% 100%, 100% 0);
+  -webkit-clip-path: polygon(0 0, 53% 100%, 100% 0);
+  transition: all 0.3s ease;
+}
+
+
+nav > ul > li:hover::after,
+nav > ul > li:hover::before {
+  opacity: 1;
+  width: 16px;
+}
+
+nav > i {
+  padding: 1rem;
+  display: none!important;
+}
+
+@media only screen and (max-width: 840px) {
+  main > p {
+  font-size: 1rem;
+}
+  nav > h1 {
+    font-size: 2rem;
+  }
+  
+  main > h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav > i {
+    display: block!important;
+    cursor: pointer;
+  }
+  
+  nav > ul {
+    display: none!important;
+  }
+  
+  aside {
+    display: block!important;
+  }
+}
+
+aside {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  overflow-y: auto;
+  background: $sea;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+aside > ul {
+  list-style-type: none;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+aside > ul > li {
+  display: block;
+  padding: 1rem 3rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  a {
+    color:$white-text;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+aside > ul > li> a:hover {
+  // background-color: rgba(255, 255, 255, 0.2);
+  color:$coral;
+}
+
+aside > ul > li > i {
+  width: 100%;
+  text-align: right;
+  color:$white-text;
+}
+
+.hide-aside {
+  left: -70%;
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(0,0,0,0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 998;
+}
+
+.hide-overlay {
+  display: none;
+}
+
+/* This is for Scroll bar inside the Side Navigation Menu */
+
+aside::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+aside::-webkit-scrollbar-track {
+  background: rgba(225, 20, 68, 1); 
+}
+ 
+/* Handle */
+aside::-webkit-scrollbar-thumb {
+  background: rgba(225, 255, 255, .3); 
+}
+
+/* Handle on hover */
+aside::-webkit-scrollbar-thumb:hover {
+  background: rgba(225, 255, 255, .6); 
+}
+
+//DROPDOWN
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: $sea;
+  font-size: 13px;
+  border: none;
+  text-transform: uppercase;
+  color:$white-text;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  z-index:100;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+// .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+// LOGO
+.logo {
+    text-align: center;
+    h1 {
+        margin:0;
+        padding:0;
+    }
+    h4 {
+        margin:0;
+        padding:0;
+    }
+}
+
+
+
+
+
+//850
+
+@media screen and (min-width: $tabletPortrait){
+
+}
+
+
+//1250
+@media screen and (min-width: $desktopMedium){
+  nav {
+    position:absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    color: $white-text;
+    transform: translatey(-100px);
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	background-color: transparent;
+	height: 226px;
+    .logo {
+      margin-left: 55px;
+      background-color: $sea;
+      width:200px;
+      padding: 13px 0;
+      flex-direction: column;
+      display:flex;
+       .logo-image {
+        img {
+          width: 90px;
+          margin-top: 10px;
+        }
+      }
+      .logo-text {
+        margin-left: 10px;
+        margin-top: 17px;
+          h1 {
+            font: 27px/33px $ptserif;
+        }
+          hr {
+            padding-bottom: 1px;
+            background-color: $coral;
+            border-bottom:1px solid $coral;
+            padding:0;
+            width: 81px;
+            margin: 5px auto;
+          }
+          h4 {
+            font-size: 14px;
+          }
+        }
+      }
+     
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-transform: uppercase;
+      margin-right: 46px;
+      margin-bottom: 68px;
+      li {
+        display: inline-block;
+        padding: 0 1rem;
+        position: relative;
+        cursor: pointer;
+        font-size: 13px;
+        text-transform: uppercase;
+        .menu-item {
+          text-decoration: none;
+          color: $white-text;
+          .menu-item {
+            border-left-style: solid;
+            border-left-width: 1px;
+            padding-left: 13px;
+            margin-left: -13px;
+            // &:not(:first-child):before {
+            //   content: " | ";
+            // }
+          }
+        }
+        .fas {
+          margin-right:3px;
+          color:$coral;
+        } 
+      }
+    }
+    .call-button {
+            text-align: center;
+            // border: 1px solid $coral;
+            padding:20px;
+            font-size: 18px;
+            color: $coral;
+            margin-left:20px; 
+            a {
+            font-size: 21px;
+            color: $coral;
+            text-decoration: none;
+            }
+          }
+  }
+  nav {
+    #menu-navigation {
+    li {
+      .menu-item {
+        color:$sea;
+      }
+      }
+    }
+  }
+  .active { 
+    transform: translatey(0);
+  }
+  
+  nav > h1 {
+    margin: 0;
+    // font-size: 3rem;
+    transition: all 0.5s ease;
+  }
+  
+  nav > ul > li:not(.call-button)::before {
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 8px) ;
+    bottom: 17px;
+    opacity: 0;
+    content: '';
+    background: $coral;
+    height: 16px;
+    width: 0px;
+    clip-path: polygon(0 0, 53% 100%, 100% 0);
+    -webkit-clip-path: polygon(0 0, 53% 100%, 100% 0);
+    transition: all 0.3s ease;
+  }
+  
+  
+  nav > ul > li:hover::after,
+  nav > ul > li:hover::before {
+    opacity: 1;
+    width: 16px;
+  }
+  
+  nav > i {
+    padding: 1rem;
+    display: none!important;
+  }
+  
+  @media only screen and (max-width: 760px) {
+    main > p {
+    font-size: 1rem;
+  }
+    nav > h1 {
+      font-size: 2rem;
+    }
+    
+    main > h1 {
+      font-size: 1.5rem;
+    }
+    
+    nav > i {
+      display: block!important;
+      cursor: pointer;
+    }
+    
+    nav > ul {
+      display: none!important;
+    }
+    
+    aside {
+      display: block!important;
+    }
+  }
+  
+  aside {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow-y: auto;
+    background: $sea;
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+  
+  aside > ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+  
+  aside > ul > li {
+    display: block;
+    padding: 1rem 3rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    a {
+      color:$white-text;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+  
+  aside > ul > li> a:hover {
+    // background-color: rgba(255, 255, 255, 0.2);
+    color:$coral;
+  }
+  
+  aside > ul > li > i {
+    width: 100%;
+    text-align: right;
+    color:$white-text;
+  }
+  
+  .hide-aside {
+    left: -50%;
+  }
+  
+  .overlay {
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
+  }
+  
+  .hide-overlay {
+    display: none;
+  }
+  
+  /* This is for Scroll bar inside the Side Navigation Menu */
+  
+  aside::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  aside::-webkit-scrollbar-track {
+    background: rgba(225, 20, 68, 1); 
+  }
+   
+  /* Handle */
+  aside::-webkit-scrollbar-thumb {
+    background: rgba(225, 255, 255, .3); 
+  }
+  
+  /* Handle on hover */
+  aside::-webkit-scrollbar-thumb:hover {
+    background: rgba(225, 255, 255, .6); 
+  }
+  
+  //DROPDOWN
+  
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: $sea;
+    font-size: 13px;
+    border: none;
+    text-transform: uppercase;
+    color:$white-text;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    z-index:100;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  // .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+  // LOGO
+  .logo {
+      text-align: center;
+      h1 {
+          margin:0;
+          padding:0;
+      }
+      h4 {
+          margin:0;
+          padding:0;
+      }
+  }
+  
+}
