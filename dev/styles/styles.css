@@ -1330,6 +1330,7 @@ aside::-webkit-scrollbar-thumb:hover {
     flex-direction: row; }
     .about-info img {
       width: 50%;
+      height: 100%;
       margin-left: 20px; }
     .about-info .about-text {
       margin: 160px 20px 0 20px; }
@@ -1377,6 +1378,7 @@ aside::-webkit-scrollbar-thumb:hover {
     justify-content: center; }
     .about-info img {
       width: 38%;
+      height: 100%;
       margin: 220px auto 25px 65px; }
     .about-info .about-text {
       margin: 208px 65px 0 100px;
