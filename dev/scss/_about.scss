@@ -166,11 +166,12 @@
     .about-info {
     	flex-direction:row;
 		img {
-			width: 50%;
+			// width: 50%;
 			height: 100%;
 			margin-left: 20px;
 		}
 		.about-text {
+			width:50%;
 			margin: 160px 20px 0 20px ;
 		}
     }
@@ -229,7 +230,7 @@
 		display:flex;
 		justify-content: center;
 		img {
-			width:38%;
+			// width:38%;
 			height:100%;
 			margin: 220px auto 25px 65px;
 
@@ -239,6 +240,7 @@
 			text-align: left;
 			line-height: 28px;
 			letter-spacing: 0.019em;
+			width: 50%;
 			.about-header-border {
 				width: 50px;
 				border-bottom: 2px solid $coral;

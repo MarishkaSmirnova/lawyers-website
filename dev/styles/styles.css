@@ -1329,10 +1329,10 @@ aside::-webkit-scrollbar-thumb:hover {
   .about-info {
     flex-direction: row; }
     .about-info img {
-      width: 50%;
       height: 100%;
       margin-left: 20px; }
     .about-info .about-text {
+      width: 50%;
       margin: 160px 20px 0 20px; }
   .about-facts {
     flex-direction: row;
@@ -1377,14 +1377,14 @@ aside::-webkit-scrollbar-thumb:hover {
     display: flex;
     justify-content: center; }
     .about-info img {
-      width: 38%;
       height: 100%;
       margin: 220px auto 25px 65px; }
     .about-info .about-text {
       margin: 208px 65px 0 100px;
       text-align: left;
       line-height: 28px;
-      letter-spacing: 0.019em; }
+      letter-spacing: 0.019em;
+      width: 50%; }
       .about-info .about-text .about-header-border {
         width: 50px;
         border-bottom: 2px solid #ff8235;
