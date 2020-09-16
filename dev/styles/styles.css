@@ -46,6 +46,8 @@ nav {
       margin-top: 19px; }
       nav .logo .logo-text h1 {
         font: 27px/33px "PT Serif", serif; }
+        nav .logo .logo-text h1 a {
+          text-decoration: none; }
       nav .logo .logo-text hr {
         padding-bottom: 1px;
         background-color: #ff8235;
@@ -55,6 +57,8 @@ nav {
         margin: 5px auto; }
       nav .logo .logo-text h4 {
         font-size: 14px; }
+        nav .logo .logo-text h4 a {
+          text-decoration: none; }
   nav ul {
     list-style-type: none;
     padding: 0;

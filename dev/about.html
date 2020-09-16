@@ -10,6 +10,7 @@
 		<link rel="icon" 
 			type="image/png" 
 			href="image/favicon.png">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -92,8 +93,9 @@
                                 image/jeff-lin-medium.jpeg 1100w,
                                 image/jeff-lin-small.jpeg 300w"
 						sizes="(min-width: 200px) 70vw,100vh,
-                              	400px">
-                    <div class="about-text">
+								  400px"
+						data-aos="fade-right" >
+                    <div class="about-text" data-aos="fade-left">
                         <div class="about-header-border" >
                             <div class="about-header">
                               	<h3> Jeff Y. Linn</h3>
@@ -108,7 +110,7 @@
                         <p>Jeff speaks fluent English and Mandarin Chinese, as well as conversational Russian.</p>
                     </div>
                 </div>
-                <div class="about-facts">
+                <div class="about-facts" data-aos="fade-up">
                     <div class="fact">
                         <div class="about-header-border">
                             <div class="about-header">
@@ -143,7 +145,7 @@
         </main>
         <footer class="footer-about">
           <div class="footer-wrapper">
-            <div class="footer-navigation">
+            <div class="footer-navigation" data-aos="fade-right">
                 <ul>
                   <li>
                     <a href="index.html">Home</a>
@@ -167,7 +169,7 @@
                 </ul>
               </div>
             </div>
-            <div class="footer-contact">
+            <div class="footer-contact" data-aos="fade-left">
               <!-- <img src="image/contact-jeff-lin-attourney.png" alt="attourney minnesota"> -->
               <div class="footer-contact-info">
                 <h6>Jeff Lin attourney at law</h6>
@@ -193,6 +195,10 @@
 		 <!-- <?php
 		include('footer.php');
 		?> -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		AOS.init({once:"true"});
+		</script>
     </body>
     <script src="scripts/navbar.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
