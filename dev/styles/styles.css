@@ -59,7 +59,8 @@ nav {
       nav .logo .logo-text h4 {
         font-size: 14px; }
         nav .logo .logo-text h4 a {
-          text-decoration: none; }
+          text-decoration: none;
+          color: #ffffff; }
   nav ul {
     list-style-type: none;
     padding: 0;
