@@ -9,6 +9,7 @@
 		<link rel="icon" 
 			type="image/png" 
 			href="image/favicon.png">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>	
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -29,9 +30,9 @@
                   </a>
                   </div>
                   <div class="logo-text">
-                    <h1>Jeff Y. Lin</h1>
-                    <hr>
-                    <h4>attorney at law</h4>
+                    <h1><a href="index.html">Jeff Y. Lin</a></h1>
+					<hr>
+					<h4><a href="index.html">attorney at law</a></h4>
                   </div>
               </div>
               <ul id="menu-navigation">
@@ -96,7 +97,7 @@
 					<a rel="china">China</a> 
 				</div>
               	<br>
-              	<div id="all-fields">
+              	<div id="all-fields" data-aos="fade-up">
                   	<div class="field all litigation">
                       	<div class="practice-header-border" >
                         <div class="practice-header">
@@ -356,6 +357,10 @@
 		 <!-- <?php
 		include('footer.php');
 		?> -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({once:"true"});
+		</script>
     </body>
     <script src="scripts/navbar.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
