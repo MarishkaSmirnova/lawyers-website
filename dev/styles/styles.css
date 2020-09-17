@@ -47,7 +47,8 @@ nav {
       nav .logo .logo-text h1 {
         font: 27px/33px "PT Serif", serif; }
         nav .logo .logo-text h1 a {
-          text-decoration: none; }
+          text-decoration: none;
+          color: #ffffff; }
       nav .logo .logo-text hr {
         padding-bottom: 1px;
         background-color: #ff8235;

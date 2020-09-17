@@ -80,11 +80,11 @@
 				<div class="main-image">
 					<div class="parallax"></div>
 				</div>
-				<div class="typedtext" id="typedtext">
-					<h3 class="animate__animated animate__backInRight">Skilled representation from</h3>
-					<h3 class="animate__animated animate__backInRight">a dedicated lawyer</h3>
+				<div class="typedtext" id="typedtext" data-aos="fade-left">
+					<h3>Skilled representation from</h3>
+					<h3>a dedicated lawyer</h3>
 				</div>
-				<div class="main-image-text consultation-button">
+				<div class="main-image-text consultation-button" data-aos="fade-left"   data-aos-delay="50">
 					<div class="box">
 						<a class="button hvr-sweep-to-left" href="#popup1">
 							<span>click here to request your</span><br>
@@ -156,7 +156,7 @@
 				</div>
 			</div> 	
 			<div class="about-section">
-				<h2>About me</h2> 
+				<h2 data-aos="zoom-in">About me</h2> 
 				<br>
 				<div class="about-text-image-wrapper">
 					<div class="text-image">
@@ -179,12 +179,12 @@
 								<span data-aos="fade-right">Available 24/7</span>
 							</div>
 							<div class="checkmark">
-								<i class="fas fa-check"></i>
+								<i class="fas fa-check" data-aos="fade-right"></i>
 								<span data-aos="fade-right">Flexible payments</span>
 							</div>
 							<div class="checkmark">
 								<i class="fas fa-check data-aos="fade-right""></i>
-								<span class="animate__animated animate__backInLeft">Relationships with our local judges.</span>
+								<span data-aos="fade-right">Relationships with our local judges.</span>
 							</div>
 						</div>
 						<div class="box" data-aos="fade-right">
@@ -198,9 +198,9 @@
 			</div>		
 			<div class="practice-areas">
 				<div class="content-wrapper">
-					<h2>Practice areas</h2>
-					<div class="container" data-aos="fade-up">
-						<a class="card" href="/practice.html#business">
+					<h2 data-aos="zoom-in">Practice areas</h2>
+					<div class="container">
+						<a class="card" href="/practice.html#business" data-aos="fade-right">
 							<i class="fas fa-briefcase"></i>  
 							<h3>Business law</h3>
 							<p class="small"> Outside general counsel services | Startup and formation</p>
@@ -208,7 +208,7 @@
 								<div class="go-arrow">→</div>
 							</div>
 						</a>
-						<a class="card" href="/practice.html#litigation">
+						<a class="card" href="/practice.html#litigation" data-aos="fade-left">
 							<i class="fas fa-gavel"></i>
 							<h3>Litigation</h3>
 							<p class="small">
@@ -221,7 +221,7 @@
 								<div class="go-arrow">→</div>
 							</div>
 						</a>
-						<a class="card" href="/practice.html#family">
+						<a class="card" href="/practice.html#family" data-aos="fade-right">
 							<i class="fas fa-user-friends"></i>
 							<h3>Family law</h3>
 							<p class="small">
@@ -230,11 +230,11 @@
 								| Child support
 								| Alimony
 							</p>
-							<div class="go-corner" href="/practice.html#family">
+							<div class="go-corner" href="/practice.html#family" >
 							<div class="go-arrow">→</div>
 							</div>
 						</a>
-						<a class="card" href="practice.html#china">
+						<a class="card" href="practice.html#china" data-aos="fade-left">
 							<i class="fas fa-globe-asia"></i>  
 							<h3>China law</h3>
 							<p class="small">
@@ -251,7 +251,7 @@
 				</div>  
 			</div>
 			<div class="testimonials">
-				<h2>Testimonials</h2>
+				<h2 data-aos="zoom-in">Testimonials</h2>
 				<div class="slider" data-aos="fade-up">
 					<div class="slide">
 						<blockquote class="groucho">
@@ -276,7 +276,7 @@
 		</main>
       <footer>
         <div class="footer-wrapper">
-            <div class="footer-navigation data-aos="fade-left"">
+            <div class="footer-navigation" data-aos="fade-left">
                 <ul>
                   <li>
                     <a href="index.html">Home</a>
@@ -333,7 +333,7 @@
 	<!-- </div>    end of wrapper   -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
-	  AOS.init();
+	  AOS.init({once:"true"});
 	</script>
   </body>
   <script src="scripts/navbar.js"></script>
