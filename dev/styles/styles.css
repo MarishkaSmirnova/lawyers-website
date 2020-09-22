@@ -287,7 +287,9 @@ aside::-webkit-scrollbar-thumb:hover {
         margin-left: 10px;
         margin-top: 17px; }
         nav .logo .logo-text h1 {
-          font: 27px/33px "PT Serif", serif; }
+		  font: 27px/33px "PT Serif", serif; }
+		  nav .logo .logo-text h1 a {	  
+		   color: #ffffff; }
         nav .logo .logo-text hr {
           padding-bottom: 1px;
           background-color: #ff8235;
@@ -296,7 +298,9 @@ aside::-webkit-scrollbar-thumb:hover {
           width: 81px;
           margin: 5px auto; }
         nav .logo .logo-text h4 {
-          font-size: 14px; }
+		  font-size: 14px; }
+		  nav .logo .logo-text h4 a {
+			color: #ffffff; }
     nav ul {
       list-style-type: none;
       padding: 0;

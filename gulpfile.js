@@ -8,11 +8,9 @@ gulp.task('sass-compile',function(){
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('dev/styles'))
-})
+    .pipe(gulp.dest('dev/styles'));
+});
 
 gulp.task('watch',function(){
     gulp.watch('dev/scss/**/*.scss', gulp.series('sass-compile'))
-})
-
-
+});
